@@ -1,0 +1,15 @@
+{
+	"name": "mhlavac/security-checker-shim",
+	"description": "composer.lock Security Checker shim that includes only executable file with no other dependencies",
+	"license": ["MIT"],
+	"require": {
+		"php": "~7.0"
+	},
+	"replace": {
+		"sensiolabs/security-checker": "self.version"
+	},
+	"bin": [
+		"security-checker",
+		"security-checker.phar"
+	]
+}
